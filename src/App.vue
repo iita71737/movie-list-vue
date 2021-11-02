@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Movielist from "./components/Movielist.vue";
 
 export default {

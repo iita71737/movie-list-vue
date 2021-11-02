@@ -158,6 +158,7 @@
 
 <script>
 import axios from "axios";
+import $ from "jquery";
 
 const BASE_URL = "https://movie-list.alphacamp.io";
 const INDEX_URL = BASE_URL + "/api/v1/movies/";
@@ -192,6 +193,7 @@ export default {
   methods: {
     showModal(id) {
       this.showMovie = this.movies.find((_movie) => _movie.id === id);
+      $("#show-movie-modal").modal("show");
     },
     searchMovie() {
       const selection = this.movies.filter((_movie) =>
